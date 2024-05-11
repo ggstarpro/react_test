@@ -5,7 +5,11 @@ Reactテスト学習用REP
 `$ npx create-react-app react_test --template typescript`
 `$ cd react_test`
 `$ npm run start`
+`$ npm i @babel/plugin-proposal-private-property-in-object` (npm test で警告が出る場合)
 
+
+## テスト実行
+`$ npm test`
 # フロントエンドテスト
 - End to End Test: ユーザが使うことを(全体)テストすること : Cypress・Playwright
 - IntegrationTest: 複数のコンポーネントのテストすること / TestingLibrary・JEST・Vitest
