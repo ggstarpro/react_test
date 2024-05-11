@@ -64,11 +64,31 @@ Lines: 行ごとのテスト
 }
 ```
 
+# [RTLクエリの優先度](https://testing-library.com/docs/queries/about#priority)
+- 誰でもアクセスできるクエリ視覚/マウス ユーザーおよび支援技術を使用するユーザーのエクスペリエンスを反映す
+    - getByRole
+    - getByLabelText
+    - getByPlaceholderText
+    - getByText
+    - getByDisplayValue
+- セマンティック クエリHTML5 および ARIA 準拠のセレクター。これらの属性を操作するユーザー エクスペリエンスは、ブラウザーや支援テクノロジーによって大きく異なることに注意してください。
+    - getByAltText
+    - getByTitle
+- テストID
+    - getByTestId
+
+# Google拡張機能 TestingPlayground
+- F12で開発者ツール表示
+- TestingPlayground 選択
+- 矢印(各要素が選択できるやつ)を選択しホバー
+- テストをこういう風に書いたらいいですよと見せてくれる。
+
 
 # 参考
-[github](https://github.com/Shin-sibainu/test-jest-local-for-udemy)
-[Jest](https://jestjs.io/ja/docs/api#testname-fn-timeout)
-[TestingLibrary](https://testing-library.com/docs/react-testing-library/api)
+- [github](https://github.com/Shin-sibainu/test-jest-local-for-udemy)
+- [Jest](https://jestjs.io/ja/docs/api#testname-fn-timeout)
+- [TestingLibrary](https://testing-library.com/docs/react-testing-library/api)
+- [ARIA in HTML W3C Recommendation (Role確認用)](https://www.w3.org/TR/html-aria/#docconformance)
 
 # 備考
-`rafce`で雛形作成
+- `rafce`で雛形作成
