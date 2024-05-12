@@ -95,6 +95,22 @@ Lines: 行ごとのテスト
 `Warning: `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.`
 上記のエラーが出る場合は`npm i @testing-library/react@latest`
 
+# [モックAPI ]
+- [JSON Placeholder](https://jsonplaceholder.typicode.com/users)
+- [MSW(Mock Service Worker)](https://mswjs.io/)
+
+```
+* https://mswjs.io/docs/getting-started
+Step 1: Install
+$ npm install msw@latest --save-dev
+$ npm i -D msw@^1.0 (不具合があったるみたいなのでver1で実施する)
+
+* 「https://mswjs.io/docs/integrations/node」を参考に下記のように修正
+- src/setupTests.ts
+- src/mocks/handlers.ts
+- src/mocks/server.ts
+```
+
 # 参考
 - [github](https://github.com/Shin-sibainu/test-jest-local-for-udemy)
 - [Jest](https://jestjs.io/ja/docs/api#testname-fn-timeout)
