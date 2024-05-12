@@ -83,6 +83,17 @@ Lines: 行ごとのテスト
 - 矢印(各要素が選択できるやつ)を選択しホバー
 - テストをこういう風に書いたらいいですよと見せてくれる。
 
+# インタラクション
+`userEvent.setup();`のsetupは14以降で使えるので`npm i @testing-library/user-event@latest`
+
+```
+- "@testing-library/user-event": "^13.5.0",
++ "@testing-library/user-event": "^14.5.2",
+```
+
+# testing-library/react
+`Warning: `ReactDOMTestUtils.act` is deprecated in favor of `React.act`. Import `act` from `react` instead of `react-dom/test-utils`. See https://react.dev/warnings/react-dom-test-utils for more info.`
+上記のエラーが出る場合は`npm i @testing-library/react@latest`
 
 # 参考
 - [github](https://github.com/Shin-sibainu/test-jest-local-for-udemy)
