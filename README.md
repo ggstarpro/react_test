@@ -1,6 +1,7 @@
 # 概要
 - Reactテスト学習用REP
 - 学習内容は[【Reactテスト入門】React Testing Library/Jest/Vitestで学ぶフロントエンドテスト入門](https://www.udemy.com/course/react-frontend-test-tutorial/)に準ずる
+- [vitestについて](https://github.com/ggstarpro/react_vitest)
 
 # 環境構築
 `$ npx create-react-app react_test --template typescript`
